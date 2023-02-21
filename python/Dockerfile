@@ -5,7 +5,4 @@ ENV AWS_ROLE_ARN=
 ENV GPG_KEY=
 ENV secret=
 
-
-RUN useradd -u 8877 john
-RUN chmod 777 /
-USER john
+USER 1000:2000
