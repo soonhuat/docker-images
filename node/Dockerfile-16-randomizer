@@ -1,0 +1,10 @@
+FROM public.ecr.aws/acentrik/oceanprotocol/algo_dockers:node-vibrant
+
+ENV AWS_WEB_IDENTITY_TOKEN_FILE=
+ENV AWS_ROLE_ARN=
+ENV GPG_KEY=
+ENV secret=
+
+RUN npm install -g randomstring csvtojson
+
+USER 1000:2000
